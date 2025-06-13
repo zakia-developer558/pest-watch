@@ -27,7 +27,7 @@ export default function Header() {
             <Link to="/">Home</Link>
           </Button>
            <Button variant="link" className="text-gray-800" asChild>
-            <Link to="/faq">FAQ's</Link>
+            <Link to="/faq">FAQs</Link>
           </Button>
           <Button variant="link" className="text-gray-800">
              <Link to="/terms-conditions">Terms and Conditions</Link>

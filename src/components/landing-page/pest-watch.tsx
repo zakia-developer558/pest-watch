@@ -50,8 +50,8 @@ export default function ProtectCommunitiesSection() {
           <img
             src={feature.icon} 
             alt={feature.title}
-            width={32}
-            height={32}
+            width={56}
+            height={56}
             className="text-foreground"
           />
         </div>
