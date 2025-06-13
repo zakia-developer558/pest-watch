@@ -30,15 +30,15 @@ export default function FAQSection() {
   ]
 
   return (
-   <section className="py-16 px-6 m-10 ">
-      <div className="mx-auto font-poppins max-w-7xl">
+    <section className="py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-20">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
           Frequently Asked Questions
         </h2>
 
         {/* FAQ Items */}
-        <div className="space-y-8 mb-40">
+        <div className="space-y-8 mb-16">
           {faqs.map((faq, index) => (
             <div key={index} className="border-b border-gray-200 pb-6">
               <h3 className="text-lg font-semibold text-gray-800 mb-3">
@@ -50,20 +50,17 @@ export default function FAQSection() {
         </div>
 
         {/* Contact Support Section */}
-        <div className="relative">
-          {/* Bottom section */}
-          <div className="bg-[#F9FAFB] rounded-lg p-8 mx-auto max-w-7xl">
-            <h3 className="text-xl font-semibold text-gray-800 mb-3">
-              Still have questions?
-            </h3>
-            <p className="text-gray-600 leading-relaxed mb-5">
-              We're here to help. Check out our contact us or reach out to our
-              support team anytime—we're always ready to assist you.
-            </p>
-            <Button className="bg-gray-800 hover:bg-gray-900 text-white px-6 py-2">
-              Contact Support
-            </Button>
-          </div>
+        <div className="bg-[#F9FAFB] rounded-lg p-8">
+          <h3 className="text-xl font-semibold text-gray-800 mb-3">
+            Still have questions?
+          </h3>
+          <p className="text-gray-600 leading-relaxed mb-5">
+            We're here to help. Check out our contact us or reach out to our
+            support team anytime—we're always ready to assist you.
+          </p>
+          <Button className="bg-gray-800 hover:bg-gray-900 text-white px-6 py-2">
+            Contact Support
+          </Button>
         </div>
       </div>
     </section>
