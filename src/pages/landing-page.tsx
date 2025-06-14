@@ -10,17 +10,6 @@ export default function LandingPage() {
       <HeroSection />
       <PestIntelligenceSection />
       <ProtectCommunitiesSection />
-      {/* <HeroSection />
-      <TrustedBySection/>
-      <SmartPreOrderSection />
-      <HowItWorksSection />
-      <BenefitsSection />
-      <CustomerQuestionsSection />
-      <DietaryFiltersSection />
-      <GuidanceSection />
-      <PricingSection />
-      <FaqSection />
-      <CTASection /> */}
     </main>
   )
 }

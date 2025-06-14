@@ -2,24 +2,23 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 import search from '../../assets/landing-page/Icon1.svg'
 import megaphone from '../../assets/landing-page/Icon2.svg'
 import clock from '../../assets/landing-page/Icon3.svg'
- // or use regular img tag if not using Next.js
 
 export default function ProtectCommunitiesSection() {
   const features = [
     {
-      icon: search, // Remove the curly braces
+      icon: search,
       title: "Smarter Surveillance",
       description:
         "Continuously updates outbreak data and overlays it with environmental conditions to detect hotspots early.",
     },
     {
-      icon: clock, // Remove the curly braces
+      icon: clock,
       title: "Targeted Action Plans",
       description:
         "Enables pest companies and councils to plan site-specific responses based on AI-ranked risk severity and urgency.",
     },
     {
-      icon: megaphone, // Remove the curly braces
+      icon: megaphone,
       title: "Public Awareness Engine",
       description:
         "Keeps households informed with region-specific updates and prevention tips through email, SMS, or app notifications.",
@@ -40,27 +39,29 @@ export default function ProtectCommunitiesSection() {
           </p>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid md:grid-cols-3 gap-6">
-          {features.map((feature, index) => (
-            <Card key={index} className="border-0 bg-[#231F20] max-w-[300px] h-full">
-              <CardHeader className="items-left space-y-4 pb-4">
-                <div className="mb-4">
-                  <img
-                    src={feature.icon} 
-                    alt={feature.title}
-                    width={56}
-                    height={56}
-                    className="text-foreground"
-                  />
-                </div>
-                <CardTitle className="text-white font-bold">{feature.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="pt-0">
-                <CardDescription className="text-[#9B9996] -mt-4">{feature.description}</CardDescription>
-              </CardContent>
-            </Card>
-          ))}
+        {/* Features Grid - Modified */}
+        <div className="flex justify-center">
+          <div className="grid md:grid-cols-3 gap-6 max-w-[1200px] w-full justify-items-center">
+            {features.map((feature, index) => (
+              <Card key={index} className="border-0 bg-[#231F20] w-full max-w-[350px]">
+                <CardHeader className="items-left space-y-4 pb-4">
+                  <div className="mb-4">
+                    <img
+                      src={feature.icon} 
+                      alt={feature.title}
+                      width={56}
+                      height={56}
+                      className="text-foreground"
+                    />
+                  </div>
+                  <CardTitle className="text-white font-bold">{feature.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <CardDescription className="text-[#9B9996] -mt-4">{feature.description}</CardDescription>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>

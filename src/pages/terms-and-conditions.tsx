@@ -50,18 +50,21 @@ export default function FAQSection() {
         </div>
 
         {/* Contact Support Section */}
-        <div className="bg-[#F9FAFB] rounded-lg p-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">
-            Still have questions?
-          </h3>
-          <p className="text-gray-600 leading-relaxed mb-5">
-            We're here to help. Check out our contact us or reach out to our
-            support team anytime—we're always ready to assist you.
-          </p>
-          <Button className="bg-gray-800 hover:bg-gray-900 text-white px-6 py-2">
-            Contact Support
-          </Button>
-        </div>
+        <div className="relative">
+  {/* Match right padding with the FAQ section's padding (e.g., `pr-[calc(100%-800px)]`) */}
+  <div className="bg-[#F9FAFB] rounded-lg p-8 pr-[90px]"> 
+    <h3 className="text-xl font-semibold text-gray-800 mb-3">
+      Still have questions?
+    </h3>
+    <p className="text-gray-600 leading-relaxed mb-5">
+      We're here to help. Check out our contact us or reach out to our
+      support team anytime—we're always ready to assist you.
+    </p>
+    <Button className="bg-gray-800 hover:bg-gray-900 text-white px-6 py-2">
+      Contact Support
+    </Button>
+  </div>
+</div>
       </div>
     </section>
   )
